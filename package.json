@@ -1,0 +1,36 @@
+{
+  "name": "Plimage",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "eslint": "eslint --ext .js ."
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "react": "15.4.2",
+    "react-native": "0.42.2",
+    "react-native-camera": "git+https://github.com/lwansbrough/react-native-camera.git",
+    "react-native-maps": "^0.13.0",
+    "react-native-vector-icons": "^4.0.0",
+    "react-navigation": "git+https://github.com/react-community/react-navigation.git",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.8.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-plugin-jasmine": "^2.2.0",
+    "babel-jest": "18.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "18.1.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "react-test-renderer": "~15.4.0-rc.4"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
