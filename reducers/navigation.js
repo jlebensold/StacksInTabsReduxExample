@@ -12,7 +12,7 @@ import { StacksOverTabs } from '../routes';
 import { TabNav } from '../routes';
 import * as types from '../actions/types';
 
-export const AppNavigator = StackNavigator(StacksOverTabs, {
+export const AppNavigator = StackNavigator(TabNav, {
   initialRouteName: 'Root',
   headerMode: 'none',
   mode: Platform.OS === 'ios' ? 'modal' : 'card',

@@ -54,8 +54,9 @@ const MainTab = StackNavigator({
   },
 });
 
-export const TabNav = TabNavigator({
-  HomeTab: {
+// this needed to be a data structure, not an object:
+export const TabNav = {
+  Root: {
     screen: HomeScreen,
     path: '/',
     navigationOptions: {
@@ -80,6 +81,8 @@ export const TabNav = TabNavigator({
       />),
     },
   },
+};
+/*
 }, {
   tabBarOptions: {
     activeTintColor: Platform.OS === 'ios' ? palette.RICH_NAVY : '#fff',
@@ -88,6 +91,7 @@ export const TabNav = TabNavigator({
   animationEnabled: false,
   swipeEnabled: false,
 });
+*/
 
 
 export const StacksOverTabs = {
