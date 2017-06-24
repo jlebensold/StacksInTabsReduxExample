@@ -56,7 +56,7 @@ const MainTab = StackNavigator({
 
 export const TabNav = TabNavigator({
   HomeTab: {
-    screen: MainTab,
+    screen: HomeScreen,
     path: '/',
     navigationOptions: {
       tabBarLabel: 'Home',
@@ -90,17 +90,17 @@ export const TabNav = TabNavigator({
 });
 
 
-// export const StacksOverTabs = {
-//   Root: {
-//     screen: TabNav,
-//   },
-//   MapPost: {
-//     screen: MapPostScreen,
-//     navigationOptions: {
-//       title: 'Notification Settings',
-//     },
-//   },
-//   PostDetail: {
-//     screen: HomePostDetailScreen,
-//   },
-// };
+export const StacksOverTabs = {
+  Root: {
+    screen: TabNav,
+  },
+  MapPost: {
+    screen: MapPostScreen,
+    navigationOptions: {
+      title: 'Notification Settings',
+    },
+  },
+  PostDetail: {
+    screen: HomePostDetailScreen,
+  },
+};

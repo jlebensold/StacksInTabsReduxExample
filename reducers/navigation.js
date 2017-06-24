@@ -7,11 +7,12 @@ import {
 } from 'react-navigation';
 
 import HomeScreen from '../containers/HomeScreen';
+import { StacksOverTabs } from '../routes';
 
 import { TabNav } from '../routes';
 import * as types from '../actions/types';
 
-export const AppNavigator = StackNavigator(TabNav, {
+export const AppNavigator = StackNavigator(StacksOverTabs, {
   initialRouteName: 'Root',
   headerMode: 'none',
   mode: Platform.OS === 'ios' ? 'modal' : 'card',
